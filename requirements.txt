@@ -1,0 +1,13 @@
+# Core Dependencies
+streamlit>=1.28.0
+
+# NLP Libraries (optimized for lightweight deployment)
+nltk>=3.8.1
+spacy>=3.6.0
+
+# Utilities
+numpy>=1.24.0
+regex>=2023.9.0
+
+# Note: Heavy packages (torch, transformers, sentence-transformers, scipy, scikit-learn)
+# are optional. The app works great with just the above packages using pure Python NLP.

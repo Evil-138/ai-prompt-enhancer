@@ -1,0 +1,24 @@
+[browser]
+gatherUsageStats = false
+
+[logger]
+level = "info"
+
+[client]
+toolbarMode = "minimal"
+showErrorDetails = true
+
+[server]
+maxUploadSize = 50
+enableCORS = true
+enableXsrfProtection = true
+headless = true
+port = 8501
+
+# Render-specific settings
+[theme]
+primaryColor = "#FF6B6B"
+backgroundColor = "#F5F5F5"
+secondaryBackgroundColor = "#E0E0E0"
+textColor = "#262730"
+font = "sans serif"

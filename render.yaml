@@ -1,0 +1,13 @@
+# Render configuration for Prompt Enhancer
+# Save this as render.yaml in your repository root
+
+services:
+  - type: web
+    name: prompt-enhancer
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python -m streamlit.cli run app.py --server.port=$PORT --server.address=0.0.0.0
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: true
